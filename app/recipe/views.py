@@ -27,6 +27,7 @@ class TagViewSet(viewsets.GenericViewSet,
 
 
 class IngredientViewSet(viewsets.GenericViewSet,
+                        mixins.CreateModelMixin,
                         mixins.ListModelMixin):
 
     """Manager ingredients in the database"""
